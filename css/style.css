@@ -1,0 +1,274 @@
+/* --------------- Misc. info --------------------- */
+/*   
+    Page breaks at 0 to 650px, 651px to 1025px, 1026px to max width. 
+*/
+/* -------------------- Mobile Screen ---------------------- */
+/* ---------------------- Styles ---------------------- */
+/* ------ Body styling ------ */
+body {
+    font-family: sans-serif;
+    font-size: 1.2em;
+    line-height: 1.45;
+    overflow-x: hidden;
+    background-color: white;
+}
+p {
+    margin: 0.75em;
+}
+ul {
+    margin: 0.75em;
+}
+h1 {
+    margin: 10px;
+    text-align: left;
+    font-size: 1.6em;
+}
+h2 {
+    font-size: 1.3em;
+}
+h3 {
+    font-size: 1.15em;
+}
+#about-me-pic {
+    margin: auto;
+    border-radius: 20px;
+    border: 2px solid #666666;
+    height: auto;
+    max-width: 100%;
+}
+/* ------ Header styling ------ */
+header {
+    display: flex;
+    align-items: center;
+    position: relative;
+    padding: 10px;
+    border-bottom: 2px solid #666666;
+    box-shadow: #b8b8b8 0px 3px 8px;
+}
+#logo {
+    float: right;
+    height: auto;
+    max-width: 10%;
+}
+/* ------ Navigation ------ */
+#mobilenav {
+    background-color: rgb(236, 223, 207);
+}
+#mobilenav ul {
+    list-style-type: none;
+    margin: auto;
+    text-align: center;
+    padding: 10px;
+}
+#mobilenav li {
+    background-color: white;
+    display: inline-block;
+    border: 2px solid #666666;
+    text-align: center;
+    margin: 1px;
+    border-radius: 20px;
+    width: 60%;
+}
+#menu-button {
+    display: flex;
+    flex-direction: column;
+    float: right;
+    height: auto;
+    max-width: 10%;
+}
+#mainnav {
+    font-weight: bold;
+    text-align: center;
+    display: none;
+}
+#mainnav ul {
+    display: inline-block;
+    margin: 0;
+    padding: 5px;
+    list-style-type: none;
+    overflow: hidden;
+    border: 2px solid #666666;
+    border-radius: 25px;
+}
+#mainnav ul li {
+    padding: 0 20px 0 20px;
+    margin: 0;
+    float: left;
+    border: 0 solid #666666;
+}
+#mainnav a {
+    display: block;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    font-size: 120%;
+    text-align: center;
+    text-decoration: none;
+}
+#mainnav a:hover,
+#mainnav a:focus {
+    text-decoration: underline;
+}
+/* ------ Main styling ------ */
+main {
+    clear: both;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    overflow: hidden;
+    width: 100%;
+    background-color: rgb(236, 223, 207);
+}
+.white-background {
+    background-color: white;
+    margin: auto;
+    width: 70%;
+    padding: 50px;
+    border-radius: 20px;
+    border: 2px solid #666666;
+}
+/* ------ Table styling ------ */
+.rates {
+    background-color: white;
+    text-align: center;
+    margin: 10px;
+}
+.rates caption {
+    padding: 10px;
+    font-weight: bold;
+    text-align: left;
+}
+.rates thead th {
+    background-color: rgb(221, 215, 207);
+}
+.rates th,
+.rates td {
+    display: table-cell;
+    float: none;
+    width: auto;
+    font-size: 0.9em;
+    border-collapse: collapse;
+    border: 2px solid #666666;
+    padding: 5px;
+}
+.rates tbody * {
+    font-weight: normal;
+}
+.rates tbody tr:nth-of-type(even) {
+    background-color: rgb(241, 238, 232);
+}
+
+/* ------ Form styling ------ */
+form {
+    text-align: center;
+}
+form p {
+    text-align: left;
+    padding-left: 20%;
+}
+form button {
+    border-radius: 10px;
+    padding: 5px;
+    width: 40%;
+}
+form button:hover {
+    border-color: #66afe9;
+    color: #66afe9;
+}
+input {
+    border-radius: 10px;
+    border-color: #666666;
+    padding: 5px;
+    width: 60%;
+}
+input:hover {
+    border-color: #66afe9;
+}
+#msg-field {
+    border-radius: 10px;
+    border-width: 2px;
+    border-color: #666666;
+    padding: 5px;
+    height: auto;
+    width: 60%;
+    height: 200px;
+}
+#msg-field:hover {
+    border-color: #66afe9;
+}
+
+/* ------ Form Validation styling ------ */
+[aria-invalid="true"] {
+    border-color:  red;
+    box-shadow:  0 0 2px red;
+}
+.errmsg p {
+    color:  red; /* Make text red */
+    font-size: 0.8em;
+    margin: 0;
+}
+
+/* ------ Footer styling ------ */
+footer {
+    width: 100%;
+    padding: 15px;
+    border-top: 2px solid #666666;
+    border-bottom: 2px solid #666666;
+}
+.copyright {
+    font-size: .8em;
+}
+
+/* -------------------- Tablet Screen ---------------------- */
+@media all and (min-width:651px) { 
+	/* ---------------------- Styles ----------------------- */
+    header {
+        display: block;
+        align-items: normal;
+        position: relative;
+        padding: 10px;
+        border-bottom: 2px solid #666666;
+        box-shadow: #b8b8b8 0px 3px 8px;
+    }
+    #logo {
+        display: block;
+        margin: auto;
+        float: none;
+        height: auto;
+        max-width: 10%;
+    }
+    #mobilenav {
+        display: none;
+    }
+    #menu-button {
+        display: none;
+    }
+    #mainnav {
+        display: inherit;
+    }
+    #about-me-pic {
+        margin: 20px;
+        border-radius: 20px;
+        border: 2px solid #666666;
+        float: left;
+        height: auto;
+        max-width: 30%;
+    }
+    h1 {
+        margin-bottom: 10px;
+        text-align: center;
+        font-size: 2.441em;
+    }
+    h2 {
+        font-size: 1.953em;
+    }
+    h3 {
+        font-size: 1.563em;
+    }
+    form button {
+        width: 20%;
+    }
+}
+/* -------------------- Desktop Screen --------------------- */
+@media all and (min-width:1026px) {  
+	/* ---------------------- Styles ----------------------- */
+}
