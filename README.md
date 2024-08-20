@@ -1,5 +1,7 @@
 # AHS-494-Project
 
+[Live view of the website](https://tiffyu25.github.io/AHS-494-Project/)
+
 The project asked to create an accessible website advertising ourselves as an IT Accessibility Consultant.
 
 During the website's development we were tasked with the following:
